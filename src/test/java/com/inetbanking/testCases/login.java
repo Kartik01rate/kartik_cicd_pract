@@ -21,7 +21,7 @@ login.click();
 String actualUrl="https://live.browserstack.com/dashboard";
 String expectedUrl= driver.getCurrentUrl();
 Assert.assertEquals(expectedUrl,actualUrl);
-System.out.println("login success");
+System.out.println("login successs");
 }
 
 }
