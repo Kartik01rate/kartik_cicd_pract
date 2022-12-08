@@ -23,4 +23,26 @@ String expectedUrl= driver.getCurrentUrl();
 Assert.assertEquals(expectedUrl,actualUrl);
 System.out.println("login success");
 }
+
+}
+public class login2{
+// public static void main(String args[])
+ {
+	 System.setProperty("webDriver.chrome.driver"," driver path");
+	 
+	 WebDriver driver =new  ChromeDriver();
+	 driver.manage().window().maximize();
+	 driver.get("www.xyx.xom");
+	 Thread.sleep(3000);
+	 WebElement username=driver.findElement(By.xpath("//*[@id='username']"));
+	 username.sendKeys("kkartik");
+	 WebElement pass=driver.findElement(By.xpath("//*[@id='pass']"));
+	 pass.sendKeys("qwerty");
+	 WebElement loginbutton=driver.findElement(By.xpath("//*[@id='login']"));
+	 loginbutton.click();
+	 
+	 
+	 
+	 
+ }
 }

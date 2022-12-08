@@ -12,8 +12,11 @@ public class dropdown {
 
 	 public static void main(String[] args) { 
 			System.setProperty("webdriver.chrome.driver","C:\\Users\\KARTIK'S\\git\\kartik_cicd_pract\\Drivers\\chromedriver.exe");
-		    String baseURL = "http://demo.guru99.com/test/newtours/register.php";
-		    WebDriver driver = new ChromeDriver();
+			 WebDriver driver = new ChromeDriver();
+			
+			 String baseURL = "http://demo.guru99.com/test/newtours/register.php";
+		   
+		    driver.manage().window().maximize();
 			driver.get(baseURL);
 
 			Select drpCountry = new Select(driver.findElement(By.name("country")));
