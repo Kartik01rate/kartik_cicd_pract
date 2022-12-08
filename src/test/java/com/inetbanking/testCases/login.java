@@ -21,11 +21,11 @@ login.click();
 String actualUrl="https://live.browserstack.com/dashboard";
 String expectedUrl= driver.getCurrentUrl();
 Assert.assertEquals(expectedUrl,actualUrl);
-System.out.println("login success");
+System.out.println("login successs");
 }
 
 }
-public class login2{
+/*public class login2{
 // public static void main(String args[])
  {
 	 System.setProperty("webDriver.chrome.driver"," driver path");
@@ -45,4 +45,4 @@ public class login2{
 	 
 	 
  }
-}
+}*/
